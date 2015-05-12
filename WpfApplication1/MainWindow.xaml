@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="800" Height="600"  Left="10" Top="10" ResizeMode="NoResize" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Canvas Name="Main">
+        <Image Canvas.Left="0" Canvas.Top="-25" Height="Auto" Name="Sky1" Stretch="None" Width="Auto" Source="/WpfApplication1;component/Sorce/clouds.jpg" StretchDirection="Both" Margin="0" MinWidth="0" />
+        <Image Canvas.Left="2559" Canvas.Top="-25" Height="Auto" Name="Sky2" Stretch="None" Width="Auto" Source="/WpfApplication1;component/Sorce/clouds.jpg" StretchDirection="Both" Margin="0" MinWidth="0" />
+        <Image Canvas.Left="21" Canvas.Top="276" Height="60" Name="Submarine" Stretch="Fill" Width="109" Source="/WpfApplication1;component/Sorce/submarine.png" />
+        <Canvas Name="Torpedoes">
+        </Canvas>
+        <Canvas Name="Mines">
+        </Canvas>
+        <Canvas Name="Chain">
+        </Canvas>
+        <Canvas Name="Wawes">
+        </Canvas>
+        <Canvas Name="ExpSmal">
+        </Canvas>
+        <Canvas Name="ExpMed">
+        </Canvas>
+        <Canvas Name="ExpLarge">
+        </Canvas>
+        <!--
+        <Image Canvas.Left="292" Canvas.Top="156"  Stretch="Fill" Width="134" Height="134" Source="/WpfApplication1;component/Sorce/explosion_ani/Naval_Mine_Broken.png"/>
+        -->
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFB4E4FA" Offset="0" />
+                <GradientStop Color="#FF2C56B4" Offset="1" />
+                <GradientStop Color="#FF00B4EC" Offset="0.533" />
+            </LinearGradientBrush>
+        </Canvas.Background>
+    </Canvas>
+</Window>
